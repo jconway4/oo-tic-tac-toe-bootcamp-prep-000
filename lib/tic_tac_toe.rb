@@ -104,31 +104,31 @@ class TicTacToe
     end
   end
   
-  def draw?(board)
-    if won?(board)
+  def draw?
+    if won?
       return false
-    elsif full?(board)
+    elsif full?
       return true
     else
       return false
     end
   end
     
-  def over?(board)
-    if won?(board)
+  def over?
+    if won?
       return true
-    elsif draw?(board)
+    elsif draw?
       return true
     else
       return false
     end
   end
     
-  def winner(board)
-    if won?(board)
-      getWinner = won?(board)
+  def winner
+    if won?
+      getWinner = won?
       getWinnerIndex = getWinner[0]
-      return board[getWinnerIndex]
+      return @board[getWinnerIndex]
     else
       return nil
     end
