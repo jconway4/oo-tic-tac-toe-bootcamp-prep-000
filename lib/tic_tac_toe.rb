@@ -135,13 +135,4 @@ class TicTacToe
       puts "Cat's Game!"
     end
   end
-  
-  def play
-    counter = 0
-    
-    while counter < 9
-      turn
-      counter += 1
-    end
-  end
 end
