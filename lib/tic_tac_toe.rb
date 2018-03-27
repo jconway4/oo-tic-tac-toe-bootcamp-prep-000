@@ -51,15 +51,6 @@ class TicTacToe
     end
   end
   
-  def play
-    counter = 0
-    
-    while counter < 9
-      turn
-      counter += 1
-    end
-  end
-  
   def turn_count
     counter = 0
     @board.each do |pos|
@@ -142,6 +133,15 @@ class TicTacToe
       puts "Congratulations #{winner(board)}!"
     else
       puts "Cat's Game!"
+    end
+  end
+  
+  def play
+    counter = 0
+    
+    while counter < 9
+      turn
+      counter += 1
     end
   end
 end
