@@ -55,7 +55,7 @@ class TicTacToe
     counter = 0
     
     while counter < 9
-      turn(board)
+      turn
       counter += 1
     end
   end
