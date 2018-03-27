@@ -51,7 +51,7 @@ class TicTacToe
     end
   end
   
-  def play(board)
+  def play
     counter = 0
     
     while counter < 9
@@ -70,7 +70,7 @@ class TicTacToe
     return counter
   end
   
-  def current_player(board)
+  def current_player
     turn = turn_count(board)
     if turn % 2 == 0
       return "X"
