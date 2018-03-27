@@ -39,6 +39,7 @@ class TicTacToe
   end
   
   def turn
+    puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(index)
@@ -126,7 +127,6 @@ class TicTacToe
   
   def play
     until over?(board) do
-      puts "Please enter 1-9:"
       turn(board)
     end
     if won?(board)
